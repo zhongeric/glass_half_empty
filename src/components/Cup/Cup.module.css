@@ -1,0 +1,75 @@
+.Cup {
+  /* height: 500px; */
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #bbb;
+  border-top: 1px solid #eee;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+
+.Water {
+  background-image: url("https://priteshgupta.com/demos/fill/waves.png");
+  /* background-color: #9cc6ff; */
+  background-position: top right;
+  position: absolute;
+  bottom: 0px;
+  width: 300px;
+  height: 100px;
+  /* -webkit-transition: all 3s ease-out;
+  -moz-transition: all 3s ease-out;
+  transition: all 3s ease-out; */
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: liquid;
+  animation-name: liquid;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+
+/* .Cup .Water {
+  background-position: top left;
+  -webkit-transition: all 3s ease-out;
+  -moz-transition: all 3s ease-out;
+  -o-transition: all 3s ease-out;
+  transition: all 3s ease-out;
+} */
+
+@-webkit-keyframes liquid {
+  0% {
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out;
+    visibility: visible;
+  }
+
+  100% {
+    /* -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out; */
+  }
+}
+
+@keyframes liquid {
+  0% {
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out;
+    visibility: visible;
+  }
+
+  100% {
+    /* -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out; */
+  }
+}
