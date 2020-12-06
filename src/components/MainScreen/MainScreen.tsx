@@ -30,12 +30,13 @@ class MainScreen extends React.Component<{}, State> {
                 <IngredientList parts={this.state.parts}></IngredientList>
                 <Cup updateParts={this.updateParts.bind(this)}></Cup>
                 <div>
-                    <Ingredient name="Vodka"></Ingredient>
-                    <Ingredient name="Gin"></Ingredient>
-                    <Ingredient name="Whiskey"></Ingredient>
-                    <Ingredient name="Rum"></Ingredient>
-                    <Ingredient name="Orange Juice"></Ingredient>
-                    <Ingredient name="Ice"></Ingredient>
+                    <Ingredient name="Vodka" color={null}></Ingredient>
+                    <Ingredient name="Gin" color={[217,228,201]}></Ingredient>
+                    <Ingredient name="Whiskey" color={[204,142,105]}></Ingredient>
+                    <Ingredient name="Rum" color={[68,54,44]}></Ingredient>
+                    <Ingredient name="Orange Juice" color={[252,164,60]}></Ingredient>
+                    <Ingredient name="Blue Curacao" color={[59,91,219]}></Ingredient>
+                    <Ingredient name="Ice" color={null}></Ingredient>
                 </div>
             </div>
         )

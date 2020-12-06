@@ -4,13 +4,15 @@ import { IngredientTypes } from '../types/IngredientTypes';
 
 type Props = {
     name: string
+    color: Number[] | null
 }
 
 export const Ingredient: React.FC<Props> = ({
-    name
+    name,
+    color
 }) => {
     const [{ isDragging }, drag, preview] = useDrag({
-        item: { type: "INGREDIENT", name: name},
+        item: { type: "INGREDIENT", name: name, color: color},
         collect: (monitor) => ({
           isDragging: !!monitor.isDragging(),
         })
