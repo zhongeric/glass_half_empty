@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDrag } from 'react-dnd';
-import { IngredientTypes } from '../types/IngredientTypes';
+import { IngredientTypes } from '../../types/IngredientTypes';
+import styles from './Ingredient.module.css';
 
 type Props = {
     name: string
@@ -24,6 +25,7 @@ export const Ingredient: React.FC<Props> = ({
             style={{
                 opacity: isDragging ? 0.5 : 1,
             }}
+            className={styles.Ingredient}
         >
             {name}
         </div>

@@ -9,7 +9,8 @@ export const IngredientList: React.FC<Props> = ({
     parts
 }) => {
     return (
-        <div>
+        <div style={{textAlign: 'left', marginLeft: '3rem'}}>
+            <h2>Ingredients:</h2>
             {parts.map((part: Part) => (
                 <div>
                     {part.ingredientName} : {part.amount}

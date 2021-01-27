@@ -14,6 +14,7 @@
 .Water {
   /* background-image: url("https://priteshgupta.com/demos/fill/waves.png"); */
   background-color: #9cc6ff;
+  background-image: url("https://www.transparenttextures.com/patterns/wavecut.png");
   background-position: top right;
   position: absolute;
   bottom: 0px;

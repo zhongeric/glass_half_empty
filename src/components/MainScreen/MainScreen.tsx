@@ -3,7 +3,7 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { Part } from '../../types/types';
 import { Cup } from '../Cup/cup';
-import { Ingredient } from '../ingredient';
+import { Ingredient } from '../Ingredient/ingredient';
 import { IngredientList } from '../ingredientList';
 
 import styles from './MainScreen.module.css';
